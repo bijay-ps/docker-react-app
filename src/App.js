@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React with Docker
+          Learn React, Docker, Docker Compose and Volume mounting
         </a>
       </header>
     </div>
