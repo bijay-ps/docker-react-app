@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t bijayps/docker-react-app -f Dockerfile.dev .
+  - docker build -t bijayps/docker-react-app .
 
 script:
   - docker run -e CI=true bijayps/docker-react-app npm run test
