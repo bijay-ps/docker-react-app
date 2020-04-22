@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t bijayps/docker-react-app -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true bijayps/docker-react-app npm run test
